@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
 
+import NiceHeader from "./components/NiceHeader"
+import NiceMain from "./components/NiceMain"
+import NiceFooter from "./components/NiceFooter"
+import './style.css';
+
+
 class App extends Component {
   render() {
     return (
-      <div><h1>Hello World</h1></div>
+      <div>
+        <NiceHeader /> {/*Calls in the header component */}
+        <NiceMain /> {/*Calls in the main component */}
+        <NiceFooter /> {/*Calls in footer component */}
+      </div>
     );
   }
 }
